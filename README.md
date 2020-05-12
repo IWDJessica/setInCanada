@@ -1,2 +1,0 @@
-# setInCanada
-Angular_setInCanada

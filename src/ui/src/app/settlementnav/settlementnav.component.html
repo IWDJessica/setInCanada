@@ -1,0 +1,147 @@
+<div *ngIf="isSettleHomeRoute()">
+
+<ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators" >
+
+  <!-- <ng-template ngbSlide *ngFor="let image of images"> -->
+  <ng-template ngbSlide *ngFor="let image of images">
+      <div class="picsum-img-wrapper imgsize">
+        <img [src]="images[0]" alt="together photo">
+      </div>
+  
+      <img src="../../assets/Pic_about/house (1).png" class="buttonnav1">
+      <img src="../../assets/Pic_about/car.png" class="buttonnav2">
+      <img src="../../assets/insurance.png" class="buttonnav3">
+      <img src="../../assets/electric-bus.png" class="buttonnav4">   
+    
+      <div class="carousel-caption sidenav">
+        <ul ngbNav #nav="ngbNav" class="nav-tabs">
+          <li ngbNavItem>
+            <a ngbNavLink>Settlement Service</a>
+          </li>
+        </ul>
+      </div>
+    </ng-template>
+</ngb-carousel>
+</div>
+<div *ngIf="isAccomodtaionRoute()">
+
+  <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators" >
+  
+    <ng-template ngbSlide *ngFor="let image of images">
+      
+        <div class="picsum-img-wrapper imgsize title-for-menus servicetitle">
+          <img [src]="images[1]" alt="accomodation photo">
+        </div>
+        
+        
+          <img src="../../assets/Pic_about/house (1).png" class="buttonnav1 servicetitle">
+          <div class="titleAccomodation">Accommodation</div>
+      
+        <div class="carousel-caption sidenav">
+          <ul ngbNav #nav="ngbNav" class="nav-tabs accomodationnav">
+            <li ngbNavItem>
+              <a ngbNavLink>Temporary</a>
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Rent a Room</a>
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Rent full accomodation</a>
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Buy house</a>
+            </li>
+          </ul>
+        </div>
+      </ng-template>
+  </ngb-carousel>
+</div>
+<div *ngIf="isAutomobileRoute()">
+
+  <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators" >
+  
+    <ng-template ngbSlide *ngFor="let image of images">
+      
+        <div class="picsum-img-wrapper imgsize title-for-menus servicetitle">
+          <img [src]="images[2]" alt="accomodation photo">
+        </div>
+        
+        
+          <img src="../../assets/Pic_about/car.png" class="buttonnav1 servicetitle">
+          <div class="titleAccomodation">Automobile</div>
+      
+        <div class="carousel-caption sidenav">
+          <ul ngbNav #nav="ngbNav" class="nav-tabs accomodationnav">
+            <li ngbNavItem>
+              <a ngbNavLink>New Car</a>
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Used Car</a>
+            </li>
+
+          </ul>
+        </div>
+      </ng-template>
+  </ngb-carousel>
+</div>
+<div *ngIf="isInsuranceRoute()">
+
+  <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators" >
+  
+    <ng-template ngbSlide *ngFor="let image of images">
+      
+        <div class="picsum-img-wrapper imgsize title-for-menus servicetitle">
+          <img [src]="images[3]" alt="accomodation photo">
+        </div>
+        
+        
+          <img src="../../assets/insurance.png" class="buttonnav1 servicetitle">
+          <div class="titleAccomodation">Insurance</div>
+      
+        <div class="carousel-caption sidenav">
+          <ul ngbNav #nav="ngbNav" class="nav-tabs accomodationnav">
+            <li ngbNavItem>
+              <a ngbNavLink>House</a>
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Car</a>
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Health</a>
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Travel</a>
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Total</a>
+            </li>
+          </ul>
+        </div>
+      </ng-template>
+  </ngb-carousel>
+</div>
+
+<div *ngIf="isPickupRoute()">
+
+  <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators" >
+  
+    <ng-template ngbSlide *ngFor="let image of images">
+      
+        <div class="picsum-img-wrapper imgsize title-for-menus servicetitle">
+          <img [src]="images[4]" alt="accomodation photo">
+        </div>
+        
+        
+          <img src="../../assets/electric-bus.png" class="buttonnav1 servicetitle">
+          <div class="titleAccomodation">Pick Up Service</div>
+      
+        <div class="carousel-caption sidenav">
+          <ul ngbNav #nav="ngbNav" class="nav-tabs accomodationnav">
+            <li ngbNavItem>
+              <a ngbNavLink>Get the quote</a>
+            </li>
+          </ul>
+        </div>
+      </ng-template>
+  </ngb-carousel>
+</div>

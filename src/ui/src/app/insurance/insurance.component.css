@@ -1,0 +1,39 @@
+.insuranceCard{
+    width: 100%;
+    /* padding: 2%; */
+    padding-left: 2%; 
+}
+
+.card-title{
+    text-align: center;
+    padding-bottom:50px;
+}
+
+.card{
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+.card img{
+    padding-bottom:30px;
+}
+
+span{
+    font-weight: bold;
+    color: grey;
+    font-size: 30px;
+}
+
+.card-footer{
+    background: #F33C3C;
+}
+
+.card-footer a{
+    color:white
+}
+
+.card-footer a:hover{
+    text-decoration: none;
+    color:white
+}
+

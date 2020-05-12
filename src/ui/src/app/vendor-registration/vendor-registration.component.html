@@ -1,0 +1,181 @@
+<nav-bar></nav-bar>
+
+<div class="wrap1">
+  <div class=container>
+    <img class="pin" src="../../assets/pic_info/pinLogo.png" alt="pinLogo">
+    <h3>Please register your service!</h3>
+  </div>
+
+  <div class="wrap2">
+    <form [formGroup]="userForm" class="textBox" (ngSubmit)="onSubmit(userForm.value)">
+      <div class="alertbox">
+        <alert></alert>
+      </div><br>
+
+      <h5>Personal Information</h5><br>
+      <div class="wrap3">
+        <div class="form-group">
+          <!-- <label for="firstName">First Name</label> -->
+          <input type="text" id="firstName" placeholder="First Name" class="form-control col-md-10"
+            [ngClass]="{'is-invalid': firstName.touched && firstName.invalid}" formControlName="firstName" required>
+          <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)" style="display: block"
+            class="invalid-feedback">
+            First Name is required
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap4">
+        <div class="form-group">
+          <!-- <label for="lastName">Last Name</label> -->
+          <input type="text" id="lastName" placeholder="Last Name" class="form-control col-md-10"
+            [ngClass]="{'is-invalid': lastName.touched && lastName.invalid}" formControlName="lastName" required>
+          <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)" style="display: block"
+            class="invalid-feedback">
+            Last Name is required
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap5">
+        <div class="form-group">
+          <!-- <label for="email">Email</label> -->
+          <input type="text" id="email" placeholder="Email Address" class="form-control col-md-10"
+            [ngClass]="{'is-invalid': email.touched && email.invalid}" formControlName="email" email required>
+          <div *ngIf="email.invalid && (email.dirty || email.touched)" style="display: block" class="invalid-feedback">
+            Email is required
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="wrap6">
+        <div class="form-group">
+          <!-- <label for="contactNumber">Phone</label> -->
+          <input type="text" id="contactNumber" placeholder="Phone Number" class="form-control col-md-10"
+            [ngClass]="{'is-invalid': contactNumber.touched && contactNumber.invalid}" formControlName="contactNumber"
+            required>
+          <div *ngIf="contactNumber.invalid && (contactNumber.dirty || contactNumber.touched)" style="display: block" class="invalid-feedback">
+            Phone number is required
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap7">
+        <div class="form-group">
+          <!-- <label for="businessName">Phone</label> -->
+          <input type="text" id="businessName" placeholder="Business Name" class="form-control col-md-10"
+            [ngClass]="{'is-invalid': businessName.touched && businessName.invalid}" formControlName="businessName"
+            required>
+          <div *ngIf="businessName.invalid && (businessName.dirty || businessName.touched)" style="display: block" class="invalid-feedback">
+            Business Name is required
+          </div>
+        </div>
+      </div>
+
+<!-- 
+    <div class="form-group">
+      <image-upload></image-upload>
+    </div> -->
+
+      <div class="wrap8">
+        <div class="form-group">
+          <div class="form-control">
+            <h6>Which service are you providing? </h6>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="isActive">Settlement <br>
+              <input type="checkbox" name="isActive">Accomodation <br>
+              <input type="checkbox" name="isActive">Automobiles<br>
+              <input type="checkbox" name="isActive">Insurance<br>
+              <input type="checkbox" name="isActive">Pickup Service
+            </label>
+          </div>
+        </div>
+      </div><br>
+
+      <h5>Where is your Service located? </h5><br>
+      <div class="form-group">
+        <!-- <label for="street">Street</label> -->
+        <input type="text" id="street" placeholder="Street" class="form-control col-md-10"
+          [ngClass]="{'is-invalid': street.touched && street.invalid}" formControlName="street" required>
+        <div *ngIf="street.invalid && (street.dirty || street.touched)" style="display: block" class="invalid-feedback">
+          A valid street number is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <!-- <label for="city">City</label> -->
+        <input type="text" id="city" placeholder="City" class="form-control col-md-10" formControlName="city"
+          [ngClass]="{'is-invalid': city.touched && city.invalid}" required>
+        <div *ngIf="city.invalid && (city.dirty || city.touched)" style="display: block" class="invalid-feedback">
+          A valid city name is required
+        </div>
+      </div><br>
+
+      <div class="form-group">
+        <!-- <label for="province">Province</label> -->
+        <input type="text" id="province" placeholder="Province" class="form-control col-md-10"
+          formControlName="province" [ngClass]="{'is-invalid': province.touched && province.invalid}" required>
+        <div *ngIf="province.invalid && (province.dirty || province.touched)" style="display: block"
+          class="invalid-feedback">
+          A valid city name is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <!-- <label for="city">Postal Code </label> -->
+        <input type="text" id="postalCode" placeholder="Postal Code" class="form-control col-md-10"
+          formControlName="postalCode" [ngClass]="{'is-invalid': postalCode.touched && postalCode.invalid}" required>
+        <div *ngIf="postalCode.invalid && (postalCode.dirty || postalCode.touched)" style="display: block"
+          class="invalid-feedback">
+          A valid Postal Code is required
+        </div>
+      </div><br><br>
+
+      <h5>Service Details </h5><br>
+      <div class="form-group">
+        <!-- <label for="city">Service Price</label> -->
+        <input type="text" id="price" placeholder="Service Price" class="form-control col-md-10"
+          formControlName="price" [ngClass]="{'is-invalid': price.touched && price.invalid}"
+          required>
+        <div *ngIf="price.invalid && (price.dirty || price.touched)" style="display: block"
+          class="invalid-feedback">
+          Estimated Service Price is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <!-- <label for="city">Service Hour</label> -->
+        <input type="text" id="serviceHour" placeholder="Service Hour" class="form-control col-md-10"
+          formControlName="serviceHour" [ngClass]="{'is-invalid': serviceHour.touched && serviceHour.invalid}" required>
+        <div *ngIf="serviceHour.invalid && (serviceHour.dirty || serviceHour.touched)" style="display: block"
+          class="invalid-feedback">
+          Available Service Hour is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <!-- <label for="city">Comment</label> -->
+        <input type="text" placeholder="Comment" class="form-control col-md-10" formControlName="comment">
+      </div>
+
+      <!-- <div class="form-group form-check">
+        <input type="checkbox" formControlName="acceptTerms" 
+        id="acceptTerms" 
+        class="form-check-input" 
+        [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
+        <label for="acceptTerms" class="form-check-label">Accept Terms & Conditions</label>
+        <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Accept Ts & Cs is required</div>
+    </div> -->
+
+
+      <div class="btn">
+        <input type="submit" value="Submit" style="color: red; width: 250px;" [disabled]="!userForm.valid"><br><br>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="footer1">
+  <app-footer id="footer1"></app-footer>
+</div>

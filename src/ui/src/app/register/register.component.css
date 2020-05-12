@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  background-image: url(../../assets/lake.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 300px;
+}
+
+.signupwide {
+  padding: 90px;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: #9F0204;
+  color: #F9F4F5;
+  font-size: 20px;
+}
+
+.signin {
+  margin-left: 1%;
+  padding: 17px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #F9F4F5;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.tall {
+  background-color: #F5F5F5;
+  opacity: 0.95;
+  margin-left: 55%;
+  margin-right:20%;
+  padding-top: 40%;
+  margin-top: -37%;
+  padding-bottom: 2%;
+  padding-left: 8px;
+}
+
+.signup {
+  margin-left: 28%;
+  /* margin-top: -12%; */
+  opacity: 100%;
+  float: left;
+  padding: 17px;
+  padding-left: 40px;
+  padding-right: 40px;
+  height:50%;
+  background-color: #9F0204;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+  color: #DFDADB;
+}
+
+.tall h2 {
+  float: left;
+  margin-top: -585px;
+  margin-left: 20px;
+  margin-bottom: -50px;
+}
+
+.textBox {
+  margin-top: -550px;
+  margin-right: -40px;
+}
+
+.alertbox{
+  position: absolute;
+  top: 14px;
+  width: 385px;
+}
+
+.box {
+  padding: 8px;
+  width: 70%;
+  margin-left: 10%;
+}
+
+/* .checkbox input {
+	display: none;
+} */
+
+/* label {
+	font-size: 20px;
+	color: #707070;
+	display: inline-block;
+	padding: 0 0 0 1em;
+  cursor: pointer;
+  margin-left: 90px;
+} */
+
+/* label:before {
+	content: '';
+	display: inline-block;
+	background: #55D8C6;
+	height: 20px;
+  width: 20px;
+  margin-left: -12px;
+	border-radius: 80%;
+	box-shadow: 0px 1px 0 0 rgba(0, 0, 0, .2);
+	box-sizing: border-box;
+	border: 10px solid #DFDADB;
+	transition: border .3s ease;
+} */
+
+/* .checkbox input:checked + label:before {
+	border-color: #fff;
+	border-width: 3px;
+}
+.checkbox input + label {
+	transition: color .7s ease;
+}
+.checkbox input:checked + label {
+	color: #5D5D5D;
+} */

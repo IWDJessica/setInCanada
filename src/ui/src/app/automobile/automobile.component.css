@@ -1,0 +1,39 @@
+.usedVsNew {
+  font-family: sans-serif;
+}
+
+.compare {
+  width: 102%;
+  height: 90%;
+}
+
+.row {
+  width: 100%;
+}
+
+.used {
+  border-right: 1px solid #8A8C8F;
+}
+
+h4 {
+  font-weight: bolder;
+}
+
+a {
+  font-weight: bold;
+}
+
+.usedText {
+  padding: 10px;
+}
+
+.deciding {
+  padding: 40px;
+  font-size: 25px;
+  /* color: #8A8C8F; */
+}
+
+#firstL {
+  color: #8A8C8F;
+  font-size: 50px;
+}

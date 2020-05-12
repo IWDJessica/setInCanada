@@ -1,0 +1,48 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.hamburger{
+    display: inline;
+    background: none;
+    color: black;
+}
+
+.customNav {
+    background: rgba(255, 255, 255);
+    height:70px;
+    /* opacity:0.2; */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /* margin-right:0; */
+}
+
+ul li{
+    width: 13%;
+    z-index: 21;
+}
+
+ul li a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+    margin-right: 20%;
+    transition-duration: .5s;
+}
+
+/* ul li a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #D11920;
+} */
+
+#dropdownBasic1{
+  cursor: pointer;
+}
+
+.background-me {
+    background-color: bisque;
+}

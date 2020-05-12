@@ -1,0 +1,278 @@
+#redNav {
+  background-color: red;
+  width: 100%;
+  height: 10%;
+}
+
+/* Logo Styles////////////////////*/
+.wrap1 {
+  background-color: #F33C3C;
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+  padding-top: 70px;
+}
+
+.logoArea img {
+  width: 150px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.logoArea {
+  border-radius: 50%;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  margin-left:20px;
+  float: left;
+  width: 13.2%;
+  padding: 5px;
+}
+
+.logoArea p {
+  color: #303E3E;
+  text-align: center;
+  font-size: 8px;
+  padding: 0px 10px 0px 10px;
+  margin: 0px;
+}
+
+.logoArea button{
+  border: none;
+  background: #F33C3C;
+  padding: 0px 10px 20px 10px;
+  width: 40%;
+  height: 25px;
+  color: white;
+  margin-left: 60px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.hockey1 {
+  width: 140px;
+  margin: 15px 0px 0px 10px;
+}
+
+.cityview {
+  width: 110px;
+  margin: 20px 0px -20px 10px;
+}
+
+.logoArea1 p {
+  color: white;
+  font-size: 12px;
+  padding: 10px 0px 0px 0px;
+  margin-top: 30px;
+}
+
+strong {
+  text-decoration: underline;
+}
+
+#cityview {
+  width : 100px;
+}
+
+.nav {
+  background-color:#000067;
+}
+ 
+/* a{
+    padding-left : 70px; 
+    padding-right : 70px; 
+    color: white;
+ }  */
+
+/*border styles of nav///////////////////*/
+ .bd{
+   border-color: none;
+   background-color:#000067;
+   color: white;
+   width: 350px;
+   padding: 3px 100px 0px 150px;
+   height: 30px;
+ }
+
+ .bd.active{
+   background:#656882;
+   color: white;
+   border-style: none;
+ }
+
+.trans {
+  width: 25%;
+  float: left;
+  padding: 15px, 10px, 5px, 15px;
+  margin: 15px, 10px, 5px, 15px;
+}
+
+h4 {
+    padding-left : 20px; 
+    padding-top: 30px;
+    padding-bottom: 5px;
+    color: darkgray;
+}
+
+/*Pages for Health Care Information/////////// */
+p {
+   padding: 10px 5px 5px 20px;
+   margin: 0px 0px 20px 0px;
+   font-size: 13px;
+}
+
+.doctor {
+     width :100%; 
+     /* height:200px; */
+     float: left;
+     padding: 10px 10px 10px 10px;
+     margin-left : -10px;
+     margin-bottom: 3%;
+ }
+
+ .steps {
+  padding: 10px 5px 5px 20px;
+  margin: 0px 0px 20px 0px;
+  font-size: 13px;
+ }
+
+ .walkin {
+  width :100%; 
+  /* height:200px; */
+  float: left;
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-left : -10px;
+  margin-bottom: 5%;
+}
+
+.hospital {
+  width :100%; 
+  /* height:200px; */
+  float: left;
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-left : -10px;
+  margin-bottom: 5%;
+}
+
+.joseph {
+  width :100%; 
+  /* height:200px; */
+  /* float: left; */
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-left : -10px;
+}
+
+.lhsc {
+  width :100%; 
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-left : -10px;
+}
+
+.victoria {
+  width :100%; 
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-left : -10px;
+}
+
+/*Transportation Pages ////////////////////////*/
+
+.trans1 {
+  width :100%; 
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-left : -10px;
+} 
+
+.trans2 {
+  width :100%; 
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-left : -10px;
+} 
+
+.trans3 {
+  width :100%; 
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-left : -10px;
+} 
+
+.trans4 {
+  width :100%; 
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-left : -10px;
+} 
+/*Education Pages////////////////////*/
+ .edu1 {
+  width :100%; 
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-left : -10px;
+}
+
+  .edu2 {
+    width :100%; 
+    padding-right : 10px; 
+    padding-top : 10px;
+    margin-left : -10px;
+  }
+
+  .edu3 {
+    width :100%; 
+    padding-right : 10px; 
+    padding-top : 10px;
+    margin-left : -10px;
+  } 
+ 
+  .edu4 {
+    width :100%; 
+    padding-right : 10px; 
+    padding-top : 10px;
+    margin-left : -10px;
+  } 
+
+  strong:link, strong:visited {
+        color: black;
+      }
+
+/*Government Pages////////////////////*/
+.gov0 {
+  width :80%; 
+  padding-right : 10px; 
+  padding-top : 10px;
+}
+
+.gov1 {
+  width :100%; 
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-left : -10px;
+}
+
+.gov2 {
+  width :100%; 
+  padding-right : 10px; 
+  padding-bottom: 2px;
+  margin-left : -10px;
+}
+
+.govlondon {
+  width :30%; 
+  padding-right : 10px; 
+  padding-top : 10px;
+  margin-bottom : 2px;
+}
+
+  #footer1{
+    clear:both;
+    width: 100%;
+  }

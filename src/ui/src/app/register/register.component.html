@@ -1,0 +1,89 @@
+<div class="wrapper">
+  <div class="signupwide">
+    <a>Already a member?</a>
+    <br><br><br>
+    <a type="button" name="signin" class="signin" routerLink="/login" href="#">Login</a>
+    <a type="button" name="home" class="signin" routerLink="/home" href="#">Home</a>
+
+  </div>
+
+  <div class="tall">
+
+    <h2>Create an Account</h2>
+    <form [formGroup]="userForm" class="textBox" (ngSubmit)="onSubmit(userForm.value)">
+      <div class="alertbox">
+        <alert></alert>
+      </div>
+      <br>
+      <div class="form-group">
+        <!-- <label for="firstName">First Name</label> -->
+        <input type="text" id="firstName" placeholder="First Name" class="form-control col-md-10"
+          formControlName="firstName" [(ngModel)]="userModel.firstName"
+          [ngClass]="{'is-invalid': firstName.touched && firstName.invalid}" required>
+        <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)" style="display: block"
+          class="invalid-feedback">
+          First Name is required
+        </div>
+
+        <!-- <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)" class="text-danger">
+          <span *ngIf="firstName.errors.required"> First Name is required. </span>
+        </div> -->
+      </div>
+
+      <div class="form-group">
+        <!-- <label for="lastName">Last Name</label> -->
+        <input type="text" id="lastName" placeholder="Last Name" class="form-control col-md-10"
+          formControlName="lastName" [(ngModel)]="userModel.lastName"
+          [ngClass]="{'is-invalid': lastName.touched && lastName.invalid}" required>
+        <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)" style="display: block"
+          class="invalid-feedback">
+          Last Name is required
+        </div>
+      </div>
+      <div class="form-group">
+        <!-- <label for="email">Email</label> -->
+        <input type="text" id="email" placeholder="Email Address" class="form-control col-md-10" formControlName="email"
+          [(ngModel)]="userModel.email" [ngClass]="{'is-invalid': email.touched && email.invalid}" email>
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" style="display: block" class="invalid-feedback">
+          A valid email is required
+        </div>
+      </div>
+      <div class="form-group">
+        <!-- <label for="phoneNumber">Phone</label> -->
+        <input type="text" id="phoneNumber" placeholder="Phone Number" class="form-control col-md-10"
+          formControlName="phoneNumber">
+
+      </div>
+      <div class="form-group">
+        <!-- <label for="country">Country</label> -->
+        <input type="text" id="country" placeholder="Country" class="form-control col-md-10" formControlName="country">
+
+      </div>
+      <div class="form-group">
+        <!-- <label for="password">Password</label> -->
+        <input type="password" id="password" placeholder="Password" class="form-control col-md-10"
+          formControlName="password"
+          [ngClass]="{'is-invalid': password.invalid && (password.dirty || password.touched)}">
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" style="display: block"
+          class="invalid-feedback">
+          A password is required
+        </div>
+      </div>
+      <div class="form-group">
+        <!-- <label for="rePassword">Confirm Password</label> -->
+        <input type="password" id="rePassword" placeholder="Re-type Password" class="form-control col-md-10"
+          formControlName="rePassword" [(ngModel)]="userModel.rePassword"
+          [ngClass]="{'is-invalid': password.value != rePassword.value && (rePassword.dirty || rePassword.touched)}">
+        <div *ngIf="password.value != rePassword.value && (rePassword.dirty || rePassword.touched)"
+          style="display: block" class="invalid-feedback">
+          Password does not match
+        </div>
+      </div>
+
+
+      <br><br>
+      <!-- TODO validate both password in javascript to prevent form to be submited -->
+      <button class="signup" type="submit" [disabled]="!userForm.valid">Sign Up</button>
+    </form>
+  </div>
+</div>

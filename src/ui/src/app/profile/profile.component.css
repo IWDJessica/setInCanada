@@ -1,0 +1,85 @@
+
+
+.background {
+  background-image: url(../../assets/mike-benna-5Cv3surFZM8-unsplash.jpg);
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+#profileBox {
+  padding-top: 150px;
+}
+
+#whiteBox {
+  background-color: white;
+  padding: 50px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+  margin-top: 120px;
+}
+
+.profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-left: 10%;
+  margin-top: -150px;
+}
+
+#nameBox {
+  color: white;
+  margin-left: 100px;
+
+}
+
+.name {
+  margin-left: 10px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#information {
+  padding: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.leaf {
+  width: 90%;
+  opacity: 40%;
+  margin-left: 600px;
+  margin-top: -200px;
+  transform: rotate(30deg);
+}
+
+.gearImg {
+  width: 40%;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+#column {
+  border-bottom: 2px solid black;
+  padding: 10px;
+
+}
+
+#info {
+  padding: 10px;
+  padding-bottom: 0;
+
+}
+
+.checked {
+  color: orange;
+}
+
+.textBox {
+  width: 100%;
+  padding: 5px;
+}
+
+.modalBox {
+  width: 150%;
+  margin-left: -30%;
+}

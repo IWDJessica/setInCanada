@@ -1,0 +1,116 @@
+/* main nav */
+img{
+    width: 100%;
+    height: 753px;
+}
+
+.sidenav{
+    width: 100%;
+    margin-left: -15%;
+}
+
+ul{
+    background: white;
+    opacity: 0.9;
+    padding: 2%;
+    margin-bottom: -41px;
+    padding-left: 9%;
+}
+
+ul li a{
+    font-size: 2.5rem;
+    border:none;
+}
+
+.buttonnav1{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 60%;
+    left: 32%;
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: white;
+    opacity: 0.8;
+}
+
+.buttonnav2{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 60%;
+    left: 42%;
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    opacity: 0.8;
+}
+
+.buttonnav3{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 60%;
+    left: 52%;
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 10px;
+    
+    background: white;
+    opacity: 0.8;
+}
+
+.buttonnav4{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 60%;
+    left:62%;
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    opacity: 0.8;
+}
+
+/* accomodation */
+.servicetitle{
+    /* top: 60%; */
+    left: 10%;
+}
+
+.titleAccomodation{
+  background: red;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 400px;
+  height: 90px;
+  background: white;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 90px;
+  opacity: 0.8;
+  font-size: 2.5rem;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+.accomodationnav li {
+    margin-right: 2%;
+}
+
+.accomodationnav li a{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.accomodationnav li a:active{
+    font-size: 1rem;
+    color: red;
+}

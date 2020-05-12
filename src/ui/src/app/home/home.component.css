@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+html, body {
+  width: 100%;
+  height: 97vh;
+  max-height:98vh;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.masthead {
+    display: none;
+    height: 95vh;
+    max-height: 95vh;
+    min-height: 500px;
+    background-image: url('../../assets/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.gallery__img {
+  width: 90%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.gallery__item--1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start:3;
+  grid-row-end:5;
+}
+
+.gallery__item--2 {
+  width: 110%;
+  height: 90%;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start:2;
+  grid-row-end:5;
+}
+
+.gallery__item--3{
+  width: 130%;
+  height: 110%;
+  grid-column-start:7;
+  grid-column-end: 9;
+  grid-row-start:4;
+  grid-row-end:7;
+}
+
+.gallery__item--4{
+  width: 100%;
+  height: 90%;
+  grid-column-start:6;
+  grid-column-end: 8;
+  grid-row-start:7;
+  grid-row-end:10;
+}
+
+.gallery__item--5{
+  width: 80%;
+  height: 100%;
+  grid-column-start:4;
+  grid-column-end: 6;
+  grid-row-start:7;
+  grid-row-end:11;
+}
+
+.gallery__item--6{
+  width: 80%;
+  height: 120%;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start:6;
+  grid-row-end:8;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+.blink{
+  text-decoration: blink;
+  animation-name: blinker;
+  -webkit-animation-name: blinker;
+  animation-iteration-count:1;
+  -webkit-animation-iteration-count: 1;
+  animation-timing-function:ease-in;
+  -webkit-animation-timing-function:ease-in;
+  animation-direction: alternate;
+	-webkit-animation-direction: alternate;
+}
+
+.blink-timing1{
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+}
+
+.blink-timing2{
+  animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+}
+
+.blink-timing3{
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+}
+
+.blink-timing4{
+  animation-duration: 0.6s;
+  -webkit-animation-duration: 0.6s;
+}
+
+.blink-timing5{
+  animation-duration: 0.7s;
+  -webkit-animation-duration: 0.7s;
+}
+
+.blink-timing6{
+  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+}
+
+/*div2*/
+.mapdiv{
+  /* display: none; */
+  height: 92vh;
+  /* max-height: 93vh; */
+  width: 85%;
+  background-image: url('../../assets/maptrans.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -5%;
+  margin-left: 5%;
+}
+
+.pin-text {
+  display: block;
+  position: absolute;
+  top:77%;
+  transform:translateY(-50%);
+  left:45%;
+  white-space:nowrap;
+}
+
+.pin-text img {
+   width: 45px;
+   height: 80px;
+   animation-name: jump;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+@keyframes jump {
+  0%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40%{
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60%{
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  80%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  width: 100%;
+  margin-left: 450px;
+  text-align: right;
+  color: #E4E4E4;
+  margin-top: 100px;
+  font-size: 80px;
+}
+
+h1 span{
+  color: #707070;
+}
+
+p{
+  margin-top: 3%;
+  text-align: right;
+  margin-left: 90%;
+  width: 50%;
+}
+
+#logo{
+  width: 30%;
+  height: 20%;
+  float: right;
+  display:block;
+  margin-right: -26%;
+  margin-top: -150px;
+
+}
+
+a {
+  color: #8A8C8F;
+  text-decoration: none;
+}
+
+#startLink{
+  clear: both;
+  float: right;
+  font-size: 40px;
+  margin-right: -40%;
+  margin-top: 1%;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #ED1C24;
+}
+
+#loginLink{
+  float: right;
+  margin-right: -40%;
+  margin-top: 7%;
+  font-size: 20px;
+}
+
+#welcomeHeader {
+  margin-left: 400px;
+}
+
+
+
+

@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 97vh;
+    max-height:98vh;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden; 
+  }
+
+.parallax {
+    /* The image used */
+    background-image: url("../../assets/Pic_about/ali-tawfiq-0ahqRV1sJJ4-unsplash.jpg");
+  
+    /* Set a specific height */
+    min-height: 1000px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro{
+    display: inline-block;
+    width:100%;
+    color:white;
+    padding-top: 23%;    
+}
+
+.intro h1{
+    font-size: 5rem;
+    margin-left: 3%;
+}
+
+.descripbox{
+  height: 500px;
+}
+
+.descripdiv{
+    background: #27333E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Abel', sans-serif;
+}
+
+.descripdiv h2{
+    margin-top: 6%;
+}
+
+.descripdiv p{
+    margin: 60px;
+    font-size: 1.2rem;
+}
+
+.descripdiv span{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url("../../assets/Pic_about/ali-tawfiq-0ahqRV1sJJ4-unsplash.jpg");
+  
+    /* Set a specific height */
+    min-height: 450px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.parallax2{
+    /* The image used */
+    background-image: url("../../assets/Pic_about/torontoGray.png");
+  
+    /* Set a specific height */
+    min-height: 750px; 
+  
+    background-color: #F0F0F0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.city{
+    padding: 7%;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2rem;
+}
+
+.city span{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.parallax3{
+    /* The image used */
+    background-image: url("../../assets/Pic_about/torontoGray.png");
+  
+    /* Set a specific height */
+    min-height: 50px; 
+  
+    background-color: #F0F0F0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.serviceheader{
+    font-size: 3.5rem;
+    padding: 5%;
+    border-right:1px solid #F0F0F0;
+    
+}
+
+.servicediv{
+    background:white;
+    height: 400px;
+    padding-top: 20px;
+    font-family: 'Abel', sans-serif;
+
+}
+  
+.servicediv img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+}
+
+.cardb{
+    border:none;
+    border-right: 1px solid #F0F0F0;
+    margin: 4%;
+    padding-right: 5%;
+}
+
+.moreInfo{
+    padding-top:4%;
+    font-size: 1.3rem;
+}
+
+.newcomer{
+    margin-bottom: 10%;
+}

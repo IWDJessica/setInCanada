@@ -1,0 +1,85 @@
+.wrap{
+    background-color:red;
+    width: 2px;
+}
+
+.wrap1 {
+    background-color: beige;
+}
+
+.container {
+    padding-top: 150px;
+    margin-left: 10px;
+}
+.pin{
+    margin: 1px 20px 10px 10px;
+    padding-left: 10px;
+    height: 40px;
+}
+
+h3 {
+    display: inline;
+}
+
+h5 {
+    margin-left: 30px;
+}
+
+.title {
+    margin-left: 3%;
+}
+
+.dropdown-list[_ngcontent-tgt-c4] {
+    width: 80%;
+}
+
+.form-group {
+    margin-left: 20px;
+}
+
+/*FormGroup-User Form */
+.wrap2 {
+    background-color: #F5F5F5;
+    opacity: 95%;
+    margin: 1% 30% 5% 5%;
+  }
+
+  /*First Name*/
+  .wrap3 {
+      float: left;
+      width: 50%;
+  }
+
+   /*Last Name*/
+  .wrap4 {
+    float: left;
+    width: 50%;
+    margin-left: -50px; 
+  }
+  
+  /*email*/ 
+  .wrap5 {
+      width: 50%;    
+  }
+
+    /*phone */ 
+    .wrap6 {
+        width: 50%;
+    }
+
+  /*which service */ 
+  .wrap7 {
+      width: 50%;
+  }
+
+  .checkbox-inline {
+      display: inline;
+  }
+
+  .form-control {
+      width: 90%;
+  }
+
+ .btn {
+     margin-left: 60%;
+ }

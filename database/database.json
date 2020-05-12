@@ -1,0 +1,12 @@
+{
+    "dev": {
+        "host": "localhost",
+        "user": "setincanada_user",
+        "password": "Setincanada_us3r!",
+        "port": "3306",
+        "database": "setincanada",
+        "driver": "mysql",
+        "multipleStatements": true
+    },
+    "sql-file": true
+}

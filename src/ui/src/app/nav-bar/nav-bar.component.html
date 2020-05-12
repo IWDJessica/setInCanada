@@ -1,0 +1,40 @@
+<!-- <img (click)="isCollapsed = !isCollapsed"
+[attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample" src="../../assets/menu-bars.png">
+
+<span [ngbCollapse]="isCollapsed"> -->
+<ul ngbNav #nav="ngbNav" class="nav justify-content-end customNav">
+  <li ngbNavItem>
+    <a ngbNavLink href="#" routerLink="/about">ABOUT</a>
+  </li>
+  <li ngbNavItem ngbDropdown>
+    <a class="nav-link dropdown-toggle" id="dropdownBasic1" ngbDropdownToggle>SETTLEMENT</a>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button ngbDropdownItem routerLink="/settlement">Settlement</button>
+      <button ngbDropdownItem routerLink="/settlement/accomodation">Accomodation</button>
+      <button ngbDropdownItem routerLink="/settlement/automobile">Automobile</button>
+      <button ngbDropdownItem routerLink="/settlement/insurance">Insurance</button>
+      <button ngbDropdownItem routerLink="/settlement/pickup">Pick Up services</button>
+    </div>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink routerLink="/info-pages">GENERAL</a>
+
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink href="#">CONTACT</a>
+  </li>
+
+  <li ngbNavItem *ngIf="!isLoggedUser()">
+    <a ngbNavLink href="#" routerLink="/login">SIGN-IN</a>
+  </li>
+  <li ngbNavItem ngbDropdown *ngIf="isLoggedUser()">
+    <a class="nav-link dropdown-toggle" id="dropdownUser" ngbDropdownToggle>{{ displayName }}</a>
+    <div ngbDropdownMenu aria-labelledby="dropdownUser">
+      <button ngbDropdownItem routerLink="/profile">PROFILE</button>
+      <button ngbDropdownItem routerLink="/">LOGOUT</button>
+      
+    </div>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
+<!-- </span> -->

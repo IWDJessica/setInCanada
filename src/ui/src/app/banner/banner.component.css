@@ -1,0 +1,42 @@
+.banner {
+    width: 101%;
+    padding: 10%;
+    padding-bottom: 3%;
+    padding-top: 5%;
+    color: white;
+}
+
+.banner p {
+    font-size: 18px;
+    color: lightgray;
+    text-align: justify;
+}
+
+.storelogo {
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.logoArea {
+    border-radius: 50%;
+    background-color: white;
+    height: 400px;
+    width: 400px;
+}
+
+.logoArea p {
+    color: #303E3E;
+    text-align: center;
+    font-size: 10pt;
+}
+
+.logoArea button {
+    border: none;
+    background: #F33C3C;
+    padding: 20px;
+    width: 50%;
+    color: white;
+    margin-left: 95px;
+    cursor: pointer;
+}

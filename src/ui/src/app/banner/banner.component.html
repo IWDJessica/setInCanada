@@ -1,0 +1,28 @@
+<div class="row banner" [ngStyle]="{ 'background-color': getBgColor()}">
+    <div class="col-6">
+      <h2>When you choose your {{bannerContent.service}} in Canada</h2>
+      <br/>
+      <p>
+        {{bannerContent.content[0]}}
+      </p>
+      <br/>
+      <p>
+        {{bannerContent.content[1]}}
+        
+      </p>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-4 logoArea">
+      <img src="../../assets/setincanada.png" class="storelogo" alt="set in canada">
+      <p>
+        Offers only verified service provider who
+        promised the honest price and great services.       
+      </p>
+      <p>
+        Registered member can check the average
+        market price of services, and actual price
+        of each services and request the quotes.
+      </p>
+      <button routerLink="/register">Register</button>
+    </div>
+  </div>

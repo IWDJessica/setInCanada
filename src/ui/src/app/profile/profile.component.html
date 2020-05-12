@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="background">
+  <nav-bar></nav-bar>
+  <div class="container">
+    <div class="row justify-content-md-center" id="profileBox">
+      <div class="col-10" id="whiteBox">
+        <div class="row">
+          <a class="name">{{profile.firstName}} </a>
+          <div class="col-6" id="nameBox">
+            <img src="../../assets/rafael-silva-yA2NU-Z00aY-unsplash.jpg" class="profilePic">
+
+          </div>
+          <div class="col-2">
+            <a data-toggle="modal" data-target="#exampleModalLong"><img src="../../assets/settings.png" class="gearImg" alt="Edit"></a>
+          </div>
+          
+
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content modalBox">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Edit Profile</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form [formGroup]="profileForm" class="textBox" (ngSubmit)="onSubmit(profileForm.value)">
+
+                  <div class="modal-body">
+                    <label>First Name</label>
+                    <br>
+                    <input type="text" formControlName="firstName" class="textBox" value="{{profile.firstName}}" 
+                    [(ngModel)]="profileForm.firstName">
+                    <br><br>
+                    <label>Last Name</label>
+                    <br>
+                    <input type="text" formControlName="lastName" class="textBox" value="{{profile.lastName}}" 
+                    [(ngModel)]="profileForm.lastName">
+                    <br><br>
+                    <label>Email Address</label>
+                    <br>
+                    <input type="text" formControlName="email" class="textBox" value="{{profile.email}}" 
+                    [(ngModel)]="profileForm.email">
+                    <br><br>
+                    <label>Country</label>
+                    <br>
+                    <input type="text" formControlName="country" class="textBox" value="{{profile.country}}" 
+                    [(ngModel)]="profileForm.country">
+                    <br><br>
+                    <label>Phone Number</label>
+                    <br>
+                    <input type="text" formControlName="phoneNumber" class="textBox" value="{{profile.phoneNumber}}" 
+                    [(ngModel)]="profileForm.phoneNumber">
+                    <br><br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" type="submit">Save changes</button>
+                  </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+          <!--////////////////////////////////////////////////////////////////////////////////-->
+        </div>
+        <div class="row" id="information"> 
+          <div class="col-3" id="column">Email Address: </div>
+          <div class="col-9" id="info">{{profile.email}}</div>
+
+          <div class="col-3" id="column">Member Since: </div>
+          <div class="col-9" id="info">{{profile.created}}</div>
+
+          <div class="col-3" id="column">Phone Number: </div>
+          <div class="col-9" id="info">{{profile.phoneNumber}}</div>
+
+          <div class="col-3" id="column">Rating: </div>
+          <div class="col-6" id="info">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span></div>
+          <div class="col-4"><img src="../../assets/maple-leaf.png" class="leaf"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

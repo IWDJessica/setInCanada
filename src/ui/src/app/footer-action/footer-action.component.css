@@ -1,0 +1,17 @@
+.content {
+    background-color: #F5F5F5;
+    padding: 75px 0px;
+}
+.button {
+    font-size: 16pt;
+    border: none;
+    background: #FFF;
+    padding: 20px 65px;
+    color: brown;
+    margin-left: 95px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 18pt;
+}

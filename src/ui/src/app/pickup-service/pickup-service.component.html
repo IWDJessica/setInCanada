@@ -1,0 +1,60 @@
+<nav-bar></nav-bar>
+<settlementnav></settlementnav>
+<app-banner type='pickupservice'></app-banner>
+<div class="container quoteform">
+    <h1>Pick Up Service Quote</h1>
+    
+    <form class="container " [formGroup]="pickupservice" (ngSubmit)="update()">
+        <div class="row">
+            <div class="col">
+                <label for="date">Select the date of your arrival</label><br><br>
+                <ngb-datepicker #d class="calender"></ngb-datepicker><br><br>
+                <label for="time">Select the time of your arrival</label><br>
+                <ngb-timepicker></ngb-timepicker>
+            </div>
+            <div class="col">
+                <label for="arrivalLocation">Select the location of your arrival</label><br>
+                <div ngbDropdown class="d-inline-block">
+                    <button class="btn btn-outline-danger" id="dropdownBasic1" ngbDropdownToggle>Select The Pick Up location</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>London Airport</button>
+                    <button ngbDropdownItem>Toronto International Airport</button>
+                    <button ngbDropdownItem>Toronto downtown</button>
+                    <button ngbDropdownItem>Kithchener</button>
+                    <button ngbDropdownItem>Windsor</button>
+                    <button ngbDropdownItem>Hamilton</button>
+                    </div>
+                </div>
+                <br><br>
+                <label for="destination">Where are you going? e.g. address, building name</label><br>
+                <input class="form-control" type="text" placeholder="Type your address"><br>
+
+                <label for="members">How many people will travel with you?</label><br>
+                <input type="number" value="{{counter}}" class="form-control" style="text-align:center;" ><br>
+
+                <label for="luggages">How many luggages will you have?</label><br>
+                <div class="row">
+                    <div class="col">
+                        <label for="luggagesLarge">Large: over 27"</label>
+                        <input type="number" value="{{counter}}" class="form-control" style="text-align:center;" >
+                    </div>
+                    <div class="col">
+                        <label for="luggagesLarge">Medium: over 22" </label>
+                        <input type="number" value="{{counter}}" class="form-control" style="text-align:center;" >
+                    </div>
+                    <div class="col">
+                        <label for="luggagesLarge">Small: below 22"</label>
+                        <input type="number" value="{{counter}}" class="form-control" style="text-align:center;" >
+                    </div>
+                    
+                    
+                </div>
+                <br>
+                <button type="button" class="btn btn-lg btn-outline-dark btn-block">Get the quotes</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+<app-footer-action  type="pickupservice"></app-footer-action>
+<app-footer></app-footer>

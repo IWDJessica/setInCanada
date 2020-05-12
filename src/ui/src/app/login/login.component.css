@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  padding-top: 300px;
+  background-image: url("/assets/lake.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loginwide {
+  padding: 90px;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: #9F0204;
+  color: #F9F4F5;
+  font-size: 20px;
+}
+
+.signup {
+  margin-left: 1%;
+  padding: 17px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #F9F4F5;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.tall {
+  background-color: #F5F5F5;
+  opacity: 0.95;
+  margin-left: 55%;
+  margin-right:20%;
+  padding-top: 30%;
+  margin-top: -31%;
+  padding-bottom: 3%;
+  padding-left: 16px;
+
+}
+
+.signin {
+  margin-left: 31%;
+  margin-top: -20%;
+  opacity: 100%;
+  float: left;
+  padding: 17px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #9F0204;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+  color: #DFDADB;
+}
+
+.tall h2 {
+  float: left;
+  margin-top: -440px;
+  margin-left: 20px;
+}
+
+.textBox {
+  margin-top: -300px;
+  margin-left: -10px;
+}
+
+.box {
+  padding: 8px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+/*.checkbox input {
+	display: none;
+}
+
+ label {
+	font-size: 20px;
+	color: #707070;
+	display: inline-block;
+	padding: 0 0 0 1em;
+  cursor: pointer;
+  margin-left: 90px;
+}
+label:before {
+	content: '';
+	display: inline-block;
+	background: #55D8C6;
+	height: 20px;
+  width: 20px;
+  margin-left: -8px;
+	border-radius: 80%;
+	box-shadow: 0px 1px 0 0 rgba(0, 0, 0, .2);
+	box-sizing: border-box;
+	border: 10px solid #DFDADB;
+	transition: border .3s ease;
+}
+
+.checkbox input:checked + label:before {
+	border-color: #fff;
+	border-width: 3px;
+}
+.checkbox input + label {
+	transition: color .7s ease;
+}
+.checkbox input:checked + label {
+	color: #5D5D5D;
+} */

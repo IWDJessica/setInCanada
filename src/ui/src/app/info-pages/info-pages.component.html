@@ -1,0 +1,218 @@
+
+<nav-bar></nav-bar>
+<div class="wrap1">
+  <div class="logoArea">
+    <img src="../../assets/setincanada.png">
+        <p>
+          Offers only verified service provider who promised
+          the best services for new comers.
+          Only the registered member can check the average
+          market price of services while the others available upon requests.
+        </p>
+      <button routerLink="/register">Register</button>
+  </div>
+  <div class="logoArea1">
+        <p><img class="hockey1" src="../../assets/pic_info/hockey1.png">Once you
+          <a routerLink="/register">register</a> as a member, you can search more specific informaiton
+          about service providers and more details about local cities.
+          <img class="cityview" src="../../assets/pic_info/cityscape.png">
+        </p>
+  </div>
+</div>
+
+<div>
+ <ul ngbNav #nav="ngbNav" id>
+    <li [ngbNavItem]="1">
+      <a ngbNavLink class="bd">Health Care</a>
+      <ng-template ngbNavContent>
+        <div class="trans"><h4>Family Doctor</h4>
+           <p><img class="doctor" src="../../assets/pic_info/doctor1.jpg" alt="doctor" ></p>
+           <p>A family doctor, also called general practitioner (GP), is usually the first doctors to diagnose and
+             treat most medical problems. If you need to see a specialist doctor, usually, you need a family doctor to refer you.
+             Family doctors also order laboratory and other tests. </p>
+            <div class="steps">
+             <h5>Steps to find your family doctor</h5>
+             <li>Ask a friend or family member if their doctor is accepting new patients.</li>
+             <li>Register with <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+              This program refers you to a local doctor or nurse practitioner who is accepting new patients.
+               You need to have OHIP to use this service and must not be currently registered with an Ontario family health care provider.</li>
+             <li>Use the <a href ="https://doctors.cpso.on.ca/?search=general">Doctor Search</a> found on the College of Physicians and Surgeons of Ontario website.
+               This search is helpful for finding doctors that speak your language or have a specialization you may need.</li>
+            </div>
+        </div>
+
+         <div class="trans"><h4>Walk-In Clinic</h4>
+           <p><img class="walkin" src="../../assets/pic_info/walkin.jpg" alt="walkin" ></p>
+           <p>You don't need an appointment to go to a walk-in medical clinic. Some clinics are open in the evening and on weekends.
+            You need to take your health (OHIP) card with you. Look online to find a walk-in medical clinic in your area.
+            Use the <a href="https://www.ontario.ca/locations/health/">medical services directory</a> to search for a clinic.
+            It is run by the Ministry of Health and Long-Term Care. If you cannot find a walk-in clinic nearby,
+            you can call the Telehealth Ontario phone service at <strong>1-866-797-0000.</strong> You can talk to a registered nurse 24 hours a day, 7 days a week.
+            This service is free and confidential.</p>
+
+          </div>
+
+         <div class="trans"><h4>Middlesex Health Unit</h4>
+           <p><img class="hospital" src="../../assets/pic_info/healthunitb.png" alt="hospital" ></p>
+           <p> What Health Unit does ...
+             <img class="hospital" src="../../assets/pic_info/healthunit.png" alt="healthunit" ></p>
+         </div>
+
+         <div class="trans"><h4>St.Joseph Urgent Care</h4>
+          <p><img class="joseph" src="../../assets/pic_info/urgent.jpg" alt="joseph"></p>
+          <p>If your health condition is rather urgent than an emergency situaion, you'd better go to
+            <a href="https://www.sjhc.london.on.ca/contact">St. Joseph Urgent Care Center.</a>
+            You may wait for a long time. However you may see orthopedests relatively faster than other clinics or hospitals.
+            You need to take your health care (OHIP or MorCare) with you.
+          </p>
+        </div>
+<!--
+        <div class="trans"><h4>London Health Science Center</h4>
+          <p><img class="lhsc" src="../../assets/pic_info/lhsc.jpg" alt="lhsc"></p>
+          <p>As London, Ontario’s largest employer, London Health Science Centre is home to Children's Hospital,
+            University Hospital, Victoria Hospital, the Kidney Care Centre, Byron Family Medical Centre,
+            Victoria Family Medical Centre and 54 Riverview Avenue site. We are also home to the London Regional
+            Cancer Program, CSTAR (Canadian Surgical Technologies & Advanced Robotics) and
+            two research institutes - Children's Health Research Institute and Lawson Health Research Institute.
+          </p>
+        </div>
+
+        <div class="trans"><h4>Victoria Hospital</h4>
+          <p><img class="victoria" src="../../assets/pic_info/joseph.png" alt="victoria"></p>
+          <p>As London, Ontario’s largest employer, London Health Science Centre is home to Children's Hospital,
+            University Hospital, Victoria Hospital, the Kidney Care Centre, Byron Family Medical Centre,
+            Victoria Family Medical Centre and 54 Riverview Avenue site. We are also home to the London Regional
+            Cancer Program, CSTAR (Canadian Surgical Technologies & Advanced Robotics) and
+            two research institutes - Children's Health Research Institute and Lawson Health Research Institute.
+          </p>
+        </div>  -->
+
+       </ng-template>
+
+    </li>
+
+    <li [ngbNavItem]="2">
+      <a ngbNavLink class="bd">Transportatoin</a>
+      <ng-template ngbNavContent>
+       <div class="trans"><h4>London Transit, your feet!</h4>
+          <p><img class="trans1" src="../../assets/pic_info/london_transit.png" alt="ltc" ></p>
+          <p>The <a href="http://www.londontransit.ca/">London Transit Commission</a> is responsible for the operation of the public transit system on behalf
+            of the City of London, Ontario, Canada. It offers the typical conventional bus service, and a para-transit service,
+            for those unable to use the conventional service. In 2014, annual ridership totaled 24.1 million.</p>
+       </div>
+
+        <div class="trans"><h4>Greyhouse to travel around</h4>
+          <p><img class="trans2" src="../../assets/pic_info/greyhound.jpg" alt="greyhound" ></p>
+          <p><a href="https://www.greyhound.ca/">Greyhound Lines,</a> the largest North American intercity bus company, with 16000 daily bus departures to
+            3100 destinations in the United States and Canada.</p>
+        </div>
+
+        <div class="trans"><h4>Viarail, the train</h4>
+          <p><img class="trans3" src="../../assets/pic_info/viarail.png" alt="viarail" ></p>
+          <p><a href="https://www.viarail.ca/en">Via Rail Canada</a> is an independent Crown corporation that is mandated to operate intercity passenger rail service in Canada.
+            It receives an annual subsidy from Transport Canada to offset the cost of operating services connecting remote communities</p>
+        </div>
+
+        <div class="trans"><h4>Uber & UberEats</h4>
+          <p><img class="trans4" src="../../assets/pic_info/uber.png" alt="uber"></p>
+          <p><a href="https://www.uber.com/ca/en/">Uber</a> Technologies, Inc., commonly known as <a href="https://www.uber.com/ca/en/">Uber</a>, is an American multinational ride-hailing company offering services that include peer-to-peer ridesharing,
+            ride service hailing, food delivery, and a micromobility system with electric bikes and scooters.
+            In London, most students take advantage of Uber or UberEats because they do not have a car. Also some students work as a Uber driver as a part-time job.</p>
+        </div>
+
+      </ng-template>
+    </li>
+
+    <li [ngbNavItem]="3">
+      <a ngbNavLink class="bd">Education</a>
+
+      <ng-template ngbNavContent>
+        <div class="trans"><h4>Education system for your children</h4>
+           <p><img class="edu1" src="../../assets/pic_info/schoolbus.jpg" alt="schoolbus" ></p>
+           <p>Education in Ontario comprises public and private primary and secondary schools and post-secondary institutions.
+            By right of the constitution of Canada, Roman Catholics are entitled to their own school system.
+            Four large, overlapping publicly funded school systems provide primary and secondary education, organized into school districts:
+            31 English public, 29 English Catholic, 4 French public, and 8 French Catholic.
+            Post-secondary education in Ontario consists of 20 public universities, 24 public colleges and over 400 registered private career colleges.
+            In Canada, education falls almost entirely under provincial jurisdiction.
+            There is no federal government department or agency involved in the formation or analysis of policy regarding education for most Canadians.
+            Publicly funded elementary and secondary schools are administered by the Ontario Ministry of Education,
+            while colleges and universities are administered by the Ontario Ministry of Training, Colleges and Universities</p>
+        </div>
+
+         <div class="trans"><h4>Thames Valley District School Board</h4>
+           <p><img class="edu2" src="../../assets/pic_info/schoolboard.png" alt="thames" ></p>
+           <p>The <a href="https://www.tvdsb.ca/en/index.aspx">TVDSB</a> serves an area over 7,000 square kilometres which includes urban, suburban and rural communities.
+            It spans three counties and includes the cities of London, St. Thomas, and Woodstock, plus the towns of Ingersoll, Tillsonburg,
+            and Strathroy-Caradoc, as well as several smaller towns and villages.
+            In 2006, the Board administered 184 schools (154 elementary and 30 secondary schools). They also provide alternative education programs
+            for approximately 40,000 students through adult day school, continuing education,
+            general interest, night school and summer school courses. Two future elementary schools in Northeast and Northwest London are
+            currently being built.</p>
+         </div>
+
+         <div class="trans"><h4>Catholic School Board</h4>
+           <p><img class="edu3" src="../../assets/pic_info/catholic.png" alt="catholic" ></p>
+           <p>The<a href="https://www.ldcsb.ca/">London District Catholic School Board (LDCSB)</a>, known as English-language Separate District School Board,
+             is a separate school board offering Catholic education in Southwestern Ontario, Canada.
+             It serves students from the cities of London, St. Thomas and Woodstock, as well as the counties of Elgin, Middlesex and Oxford.</p>
+         </div>
+
+         <div class="trans"><h4>London Libraries</h4>
+           <p><img class="edu4" src="../../assets/pic_info/library.jpg" alt="uber"></p>
+           <p>Most education after school and alternative educations are available at the libraries in London.
+             They provide dynamic and diverse programs for adults as well. With a library card, you can attend uncountable events.
+             Digital tools like Kanopy, Lynda.com, Flipster, and OverDrive are provided.
+             You can validate the parking for 2 hours at the <a href="http://www.londonpubliclibrary.ca/">London Central Library</a> at City Plaza.</p>
+         </div>
+       </ng-template>
+    </li>
+
+    <li [ngbNavItem]="4">
+      <a ngbNavLink class="bd">Government Service</a>
+      <ng-template ngbNavContent>
+        <div class="trans"><h4>Service Canada, Federal Government</h4>
+          <p><img class="gov0" src="../../assets/pic_info/servicecanada.png" alt="canada"></p>
+          <p><a href="https://www.canada.ca/en.html">Federal Government </a>takes care of mail, taxes, money, banking, shipping, pipelines, telephones, criminal law, foreign affairs,
+            national defence, employment insurance, and Aboriginal lands and rights</p>
+        </div>
+
+        <div class="trans"><h4>Ontario Government</h4>
+            <p><img class="gov1" src="../../assets/pic_info/ontariogov.png" alt="ontario"></p>
+            <p>Provinces are responsible for social services like education, health and social development;
+              economic functions like agriculture and roads; and provincial governance and administration
+              which include the legislature, provincial treasury, local government and human settlements.
+              <a href="https://www.ontario.ca/page/government-ontario"></a>
+              <strong>Services for residents</strong>
+              Access government services and products from ServiceOntario, including birth certificates, driver's licences and health cards.
+              <strong>Services for businesses</strong>
+              Information and services to help you start or run a business in Ontario.
+              <strong>Services for not-for-profits</strong>
+              Information for not-for-profits and charities.
+            </p>
+            <!-- <p><img class="gov1" src="../../assets/pic_info/ontariobd.png" alt="ontario"></p> -->
+        </div>
+
+        <div class="trans"><h4>Service Ontario, Provincial Government</h4>
+          <p><img class="gov1" src="../../assets/pic_info/ontariobd.png" alt="ontario"></p>
+          <p class="gov2"><a href="https://drivetest.ca/find-a-drive-test-centre/find_a_drivetest_centre.html#!/locations">Find a DriveTest Centre</a></p>
+          <p class="gov2"><a href="https://www.ontario.ca/page/apply-ohip-and-get-health-card">Apply for OHIP and get a health card</a></p>
+      </div>
+
+      <div class="trans"><h4>Service London, Municipal Government</h4>
+        <p><img class="govlondon" src="../../assets/pic_info/londonservice.png" alt="london"></p>
+        <p class="gov2">You can find the services you need from <a href="https://www.informationlondon.ca/">London Service</a></p>
+        <p class="gov2">You can prepare for your move to London from <a href ="https://www.movetolondonmiddlesex.ca/">here</a></p>
+      </div>
+
+      </ng-template>
+    </li>
+  </ul>
+
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>
+
+
+<div id="footer1">
+  <app-footer id="footer1"></app-footer>
+</div>
